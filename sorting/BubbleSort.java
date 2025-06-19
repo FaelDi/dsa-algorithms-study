@@ -1,5 +1,6 @@
 package sorting;
 
+//average: O(n^2), worst: O(n^2), best: O(n) when the array is already sorted
 public class BubbleSort {
     public static void bubbleSort(int[] arr) {
         int n = arr.length;
@@ -15,7 +16,7 @@ public class BubbleSort {
                     swapped = true;
                 }
             }
-            // If no two elements were swapped by inner loop, then break
+            
             if (!swapped) {
                 break;
             }
